@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+<RelativeLayout
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/titulo_text"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/blanco"
+            android:background="@color/azul"
+            android:text="Generación de CFDI"/>
+
+    <TextView
+            android:id="@+id/emisor_text"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_below="@id/titulo_text"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Emisor:"/>
+
+    <TableLayout
+            android:id="@+id/emisor_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/emisor_text" >
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_marginRight="40dp"
+                    android:text="RFC:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <EditText
+                    android:enabled="false"
+                    android:text="ESI920427886"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:text="Nombre:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <EditText
+                    android:enabled="false"
+                    android:text="EDITORIAL SISTA SA DE CV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+            android:id="@+id/datos_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emisor_form"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="Modificar mis datos" />
+
+    <TextView
+            android:id="@+id/receptor_text"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_below="@id/datos_button"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Receptor:"/>
+
+    <TableLayout
+            android:id="@+id/receptor_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/receptor_text" >
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_marginRight="40dp"
+                    android:text="Cliente:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <Spinner
+                    android:id="@+id/clientes_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+            android:id="@+id/clientes_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/receptor_form"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="Catalogo de clientes" />
+
+    <TextView
+            android:id="@+id/comprobante_text"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_below="@id/clientes_button"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Comprobante:"/>
+
+    <TableLayout
+            android:id="@+id/comprobante_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/comprobante_text" >
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_marginRight="40dp"
+                    android:text="Folio:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="AX-101"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:text="..."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <EditText
+                    android:text="..."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:text="..."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <EditText
+                    android:text="..."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+            android:id="@+id/generar_factura_button"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/comprobante_form"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:text="@string/generar_factura_text" />
+
+</RelativeLayout>
+
+</ScrollView>

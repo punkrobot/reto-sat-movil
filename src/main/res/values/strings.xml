@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SATMovil</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="drawer_open">Abrir</string>
+    <string name="drawer_close">Cerrar</string>
+
+    <string name="generar_factura_text">Generar factura</string>
+    <string name="procesando">Generando factura...</string>
+    <string name="exito">Factura generada con éxito</string>
+
+    <string-array name="navigation_array">
+        <item>Inicio</item>
+        <item>Factura electrónica</item>
+    </string-array>
+
+    <string-array name="clientes_list">
+        <item>Juan Manuel Rodríguez Pérez</item>
+        <item>Oscar Rodríguez Pérez</item>
+    </string-array>
+
+</resources>
